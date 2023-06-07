@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gynecology</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="multi-step-form">
+    <div class="middle-area">
+        <div class="row">
+            <div class="col-sm-12 logo d-flex justify-content-center"><span><img src="assets/images/logo.png" /></span></div>
+            <div class="col-sm-12 headline mt-4">Create Your Account</div>
+            <div class="col-sm-12 subheadline mt-1">Complete the form with correct information & become our precious member</div>
+            <div class="col-sm-12 mt-5 form-steps mb-2">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <span>1</span>
+                            <p>Personal</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>2</span>
+                            <p>Pregnancy</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>3</span>
+                            <p>Appointment</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-10 offset-sm-1 step_form_data mt-5">
+                <form action="congratulation.html">
+                    <div class="inside_form">
+                        <section id="personal" class="active">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/user.svg" /></span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mobile no:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/phone.svg" /></span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/email.svg" /></span>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/lock.svg" /></span>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="button" class="btn btn-success btn-lg rounded px-3 px-sm-5 next">Next</button>
+                            </div>
+                        </section>
+
+                        <section id="pregnancy">
+                            <div class="row mb-3">
+                                <div class="col-sm-6 custom_radio mb-1">
+                                    <label>
+                                        <input type="radio" name="a" checked>
+                                        <span>I'm Pregnent</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 custom_radio mb-1">
+                                    <label>
+                                        <input type="radio" name="a">
+                                        <span>I'm Trying</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">No. of Weeks</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/calendar.svg" /></span>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="form-label">Any problem you are facing ?</label>
+                                <div class="col-sm-6 custom_radio mb-1">
+                                    <label>
+                                        <input type="radio" name="b" checked>
+                                        <span>Yes</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 custom_radio mb-1">
+                                    <label>
+                                        <input type="radio" name="b">
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="button" class="btn btn-dark btn-lg rounded px-3 px-sm-5 me-1 me-sm-4 prev">Back</button>
+                                <button type="button" class="btn btn-success btn-lg rounded px-3 px-sm-5 next">Next</button>
+                            </div>
+                        </section>
+
+                        <section id="appointment">
+                            <div class="mb-5 thanks-headline">
+                                Thank you so much for registering with us! With "Kirsten Karchmer" you will have 24/7 virtual game available to address your concerns
+                            </div>
+                            <div class="mb-4 subscription-price d-flex justify-content-center">
+                                <label>
+                                    <input type="checkbox">
+                                    $29<span> / Month</span>
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Name on Card</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/user.svg" /></span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Card Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><img src="assets/images/card.svg" /></span>
+                                    <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Expiry Date</label>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="input-group">
+                                                <select class="form-select">
+                                                    <option>MM</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="input-group">
+                                                <select class="form-select">
+                                                    <option>YY</option>
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>2020</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Security Code (CVV)</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 mb-3 mt-4 mx-auto agreement text-center">
+                                <input type="checkbox">
+                                I read and agree the <a href="#">Terms and Conditions</a> agreement of "Kirsten Karchmer"
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="button" class="btn btn-dark btn-lg rounded px-3 px-sm-5 me-1 me-sm-4 prev">Back</button>
+                                <button type="submit" class="btn btn-success btn-lg rounded px-3 px-sm-5">Next</button>
+                            </div>
+                        </section>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

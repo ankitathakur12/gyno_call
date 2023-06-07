@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gynecology</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="toggle"><img src="assets/images/toggle.svg"></div>
+        <div class="logo"><img src="assets/images/logo.png"></div>
+        <div class="user"><a href="settings.html"><img src="assets/images/user-profile.svg"></a></div>
+    </header>
+
+    <sidebar class="sidebar">
+        <ul>
+            <li><a href="dashboard.html"><span><img src="assets/images/home.svg" /></span> Home</a></li>
+            <li><a href="meeting-history.html"><span><img src="assets/images/meeting.svg" /></span> Meeting History</a></li>
+            <li><a href="my-menu-plans.html"><span><img src="assets/images/menu-plans.svg" /></span> My Menu Plans</a></li>
+            <li class="active"><a href="settings.html"><span><img src="assets/images/settings.svg" /></span> Settings</a></li>
+        </ul>
+    </sidebar>
+
+    <section class="display_section">
+        <div class="main-section">
+            <div class="row">
+                
+                <div class="col-sm-12 headline-topbar mt-4 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 left_part">
+                            <h1>Settings</h1>
+                            <h6>Update your profile and membership</h6>
+                        </div>
+                        <div class="col-md-4 right_part d-flex justify-content-md-end mt-4 mt-md-0">
+                            <button type="button" class="btn btn-danger btn-lg rounded px-3 px-sm-4 logout_cta d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#logout">
+                                <img src="assets/images/logout.svg"> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 divider"><hr /></div>
+
+                <div class="col-sm-12 mt-3 mb-3">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-4 col-lg-3 left-tab">
+                            <div class="shadow-block p-0">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><button class="nav-link active" data-bs-target="#profile" data-bs-toggle="tab"><span><img src="assets/images/my-profile.svg"></span> My Profile</button></li>
+                                    <li class="nav-item"><button class="nav-link"  data-bs-target="#membership" data-bs-toggle="tab"><span><img src="assets/images/membership.svg"></span> Membership Plan</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-8 col-lg-9 left-tab-data mt-4 mt-md-0">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="profile">
+                                    <div class="shadow-block p-md-4">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <label class="form-label">Full Name</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><img src="assets/images/user.svg" /></span>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>        
+                                                <div class="col-md-6 mb-4">
+                                                    <label class="form-label">Mobile no:</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><img src="assets/images/phone.svg" /></span>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>        
+                                                <div class="col-md-12 mb-4">
+                                                    <label class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><img src="assets/images/email.svg" /></span>
+                                                        <input type="email" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <label class="form-label">Password</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><img src="assets/images/lock.svg" /></span>
+                                                        <input type="password" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <label class="form-label">Confirm Password</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><img src="assets/images/lock.svg" /></span>
+                                                        <input type="password" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-success btn-lg rounded px-3 px-sm-5">Update</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="membership">
+                                    <div class="shadow-block p-md-4">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-5 purchase">
+                                                <h2>$29 <span>/ Month</span></h2>
+                                                <div class="date_type">Purchase Date:<span>09-May-2023</span></div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-7 expiry mt-3 mt-lg-0">
+                                                <div class="mb-3 d-flex justify-content-lg-end flex-wrap">
+                                                    <button class="btn btn-success me-3 mt-1 btn-lg rounded px-4">Renew</button>
+                                                    <button class="btn btn-danger btn-lg mt-1 rounded px-3">Cancel Membership</button>
+                                                </div>
+                                                <div class="date_type d-flex justify-content-lg-end">Expiry Date:<span>09-Apr-2023</span></div>
+                                            </div>
+
+                                            <div class="col-sm-12 divider mt-2 mb-2"><hr /></div>
+
+                                            <div class="saved_title mb-4">Saved Cards</div>
+                                            <div class="all_saved_cards">
+                                                <div class="card-data active">
+                                                    <div class="del-card"><img src="assets/images/del.svg" alt="del"></div>
+                                                    <div class="type mb-4"><img src="assets/images/visa.svg" alt="visa"></div>
+                                                    <div class="name">Amy Jameson</div>
+                                                    <div class="number">1234-5678-9010-0010</div>
+                                                    <div class="limit mt-3">10/23</div>
+                                                </div>
+                                                <div class="card-data add_new">
+                                                    <img src="assets/images/add-new.svg">
+                                                    <p>Add New Card</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="shadow-block p-md-4 mt-4 add_new_card_fields">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label class="form-label">Name on Card</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><img src="assets/images/user.svg" /></span>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>  
+                                            <div class="col-md-6 mb-4">
+                                                <label class="form-label">Card Number</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><img src="assets/images/card.svg" /></span>
+                                                    <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                                </div>
+                                            </div>     
+                                            <div class="col-md-6 mb-4">
+                                                <label class="form-label">Expiry Date</label>
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-2 mb-sm-0">
+                                                        <div class="input-group">
+                                                            <select class="form-select">
+                                                                <option>MM</option>
+                                                                <option>01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                                <option>05</option>
+                                                                <option>06</option>
+                                                                <option>07</option>
+                                                                <option>08</option>
+                                                                <option>09</option>
+                                                                <option>10</option>
+                                                                <option>11</option>
+                                                                <option>12</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="input-group">
+                                                            <select class="form-select">
+                                                                <option>YY</option>
+                                                                <option>2023</option>
+                                                                <option>2022</option>
+                                                                <option>2021</option>
+                                                                <option>2020</option>
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                                <option>2012</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                            <div class="col-md-6 mb-4">
+                                                <label class="form-label">Security Code (CVV)</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex">
+                                                <button class="btn btn-success btn-lg rounded px-3 px-sm-4 me-3">Add Card</button>
+                                                <button class="btn btn-dark btn-lg rounded px-3 px-sm-4 close_payment">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="logout">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <section class="pt-md-3 pb-md-4 active modal-section text-center">
+                        <h4 class="mb-4 px-sm-3">Are you sure? <br>You want to logout</h4>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-dark btn-lg rounded px-3 px-sm-5  me-1 me-sm-4" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success btn-lg rounded px-3 px-sm-5">Sure!</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat_data">
+        <a href="chat.html"><img src="assets/images/chat.png"></a>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
